@@ -56,8 +56,9 @@
 </head>
 
 <body>
-    <header>
-        <nav class="container mx-auto">
+    <header class="container mx-auto">
+        <!-- navbar section -->
+        <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -97,6 +98,42 @@
                 </div>
             </div>
         </nav>
+        <!-- banner section -->
+        <section>
+            <div class="carousel w-full h-[80vh]">
+                <!-- slide one -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="images/1.png" class="w-full" />
+                    <div class="absolute flex left-4 bottom-4 gap-2 ">
+                        <a href="#slide2"
+                            class="btn btn-circle bg-black text-white text-2xl border-none hover:bg-black">❮</a>
+                        <a href="#slide2"
+                            class="btn btn-circle bg-black text-white text-2xl border-none hover:bg-black">❯</a>
+                    </div>
+                </div>
+                <!-- slide two -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="images/4.png" class="w-full" />
+                    <div class="absolute flex left-4 bottom-4 gap-2 ">
+                        <a href="#slide1"
+                            class="btn btn-circle bg-black text-white text-2xl border-none hover:bg-black">❮</a>
+                        <a href="#slide1"
+                            class="btn btn-circle bg-black border-none text-white text-2xl hover:bg-black">❯</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- extra div -->
+            <div
+                class="bg-black p-8 lg:w-[565px] gap-4 lg:-translate-y-48 rounded-xl mx-4 mt-4 text-justify lg:mr-8 lg:ml-auto">
+                <h2 class="text-white font-man text-base  lg:text-2xl font-extrabold">Meet all the heroes from the field
+                </h2>
+                <p class="text-[#FFFFFF99] font-man text-sm lg:text-base font-medium">Dit amet consectetur. Condimentum
+                    dignissim
+                    adipiscing aliquam turpis placerat dolor. Purus urna
+                    in sit nullam proin. </p>
+            </div>
+        </section>
     </header>
     <main></main>
     <footer></footer>
